@@ -129,3 +129,7 @@ label {
 .flex-inner li {
   width: 75px;
 }
+
+.flex-inner {
+  justify-content: space-between;
+}
