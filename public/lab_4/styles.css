@@ -43,7 +43,6 @@ h3 {
 .wrapper {
   flex-direction: column;
   display: flex;
-  align-items: center;
 }
 
 .content {
@@ -90,7 +89,7 @@ textarea {
   letter-spacing: 1px;
   padding: 5px;
   border-radius: 5px;
-  width: 100%;
+  width: 400%;
 }
 
 label {
@@ -117,7 +116,7 @@ label {
 }
 
 .flex-outer li button {
-  margin-left: auto;
+  margin-left: left;
   padding: 8px 16px;
   border: none;
   background: #333;
