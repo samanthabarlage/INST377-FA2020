@@ -117,7 +117,7 @@ label {
 }
 
 .flex-inner {
-  padding:  8px;
+  padding: 0 8px;
   justify-content: space-between;  
 }
 
