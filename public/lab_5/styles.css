@@ -76,6 +76,7 @@ h3 {
   cursor: pointer;
   font-family: Verdana;
   font-size: 14px;
+  margin-right: 10px;
 }
 
 .button:hover {
@@ -127,7 +128,7 @@ label {
   border-radius: 3px;
 }
 .flex-inner li {
-  width: 80px;
+  width: 95px;
 }
 
 .flex-inner {
