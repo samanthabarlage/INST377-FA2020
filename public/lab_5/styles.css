@@ -76,6 +76,7 @@ body {
     cursor: pointer;
     font-family: Verdana;
     font-size: 14px;
+    margin-right: 10px;
   }
   
   .button:hover {
@@ -126,7 +127,7 @@ body {
     border-radius: 2px;
   }
   .flex-inner li {
-    width: 75px;
+    width: 95px;
   }
   
   .flex-inner {
