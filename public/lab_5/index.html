@@ -35,7 +35,7 @@
                             <textarea rows="5" cols='33' id="message" name="message" placeholder="Enter your message here"></textarea>
                         </li>
                         <li>
-                        <p>Age</p>
+                        <p class= ".checkbox-list-label">Age</p>
                         <ul class="flex-inner">
                             <li>
                                 <input type="checkbox" id="eighteen-to-thirtyfive">
@@ -55,10 +55,21 @@
                         
                         <li>
                             <button for="submit" type="submit" id="submit" name="submit">SUBMIT FORM</button>
+                            <button onclick= "testFunction()" class="button" id="activate_button" name="activate">Activate</button>
                         </li>
                     </ul>
                 </form>
             </div>
         </div>
+        <script>
+            function testFunction() {
+                const elements = document.querySelectorAll('flex.inner li label')
+                const fruitArray = ['apple', 'kiwi', 'pomelo']
+                elements.forEach((el)) => {
+                    const text = el.innerText;
+                    console.log(text);
+                }
+            }
+        </script>
     </body>
 </html>
