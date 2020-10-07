@@ -15,60 +15,50 @@
                 <form action='/api' method='post' >
                     <ul class="flex-outer">
                         <li>
-                            <label for="first-name">First Name</label>
-                            <input type="text" for= "fname" id="first-name" name="first-name" maxlength="140">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="first-name" id="fname">
                         </li>
                         <li>
-                            <label for="last-name">Last Name</label>
-                            <input type="text" for="lname" id="last-name" name="last-name" maxlength="140">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="last-name" id="lname">
                         </li>
                         <li>
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email"> 
+                            <input type="email" name="email" id="email">
                         </li>
                         <li>
                             <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" name="phone" id="phone">
                         </li>
                         <li>
                             <label for="message">Text Field</label>
                             <textarea rows="5" cols='33' id="message" name="message" placeholder="Enter your message here"></textarea>
                         </li>
                         <li>
-                        <p class= ".checkbox-list-label">Age</p>
+                        <p>Age</p>
                         <ul class="flex-inner">
                             <li>
-                                <input type="checkbox" id="eighteen-to-thirtyfive">
+                                <input type="checkbox" id="eighteen-to-thirtyfive" name="age">
                                 <label for="eighteen-to-thirtyfive">18-35</label>
 
                             </li>
                             <li>
-                                <input type="checkbox" id="thirtyfive-to-fifty">
+                                <input type="checkbox" id="thirtyfive-to-fifty" name="age">
                                 <label for="thirtyfive-to-fifty">35-50</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="fifty-to-sixtyfive">
+                                <input type="checkbox" id="fifty-to-sixtyfive" name="age">
                                 <label for="fifty-to-sixtyfive">50-65</label>
                             </li>
                         </ul>
                         </li>
                         
                         <li>
-                            <button for="submit" type="submit" id="submit" name="submit">SUBMIT FORM</button>
-                            <button onclick= "testFunction()" class="button" id="activate_button" name="activate">Activate</button>
+                            <button class="button" type= "submit" id="submit_button" name="submit_button">SUBMIT FORM</button>
                         </li>
                     </ul>
                 </form>
             </div>
         </div>
-        <script>
-            function testFunction() {
-                fetch('/api')
-                .then((response) => response.text())
-                .then((response) => {
-                    console.log(response);
-                })
-            }
-        </script>
     </body>
 </html>
