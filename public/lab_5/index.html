@@ -55,7 +55,7 @@
                         
                         <li>
                             <button class="button" type= "submit" id="submit_button" name="submit_button">SUBMIT FORM</button>
-                            <button onclick= "testFunction()" class="button" type= "submit" id="activate_button" name="activate_button">Activate</button>
+                            <button onclick= "testFunction()" class="button" type= "button" id="activate_button" name="activate_button">Activate</button>
                         </li>
                     </ul>
                 </form>
@@ -63,13 +63,27 @@
         </div>
         <script>
             function testFunction() {
+                const myTitle = document.querySelector('title');
+                    myTitle.textContent = 'Lab 5 for Samantha Barlage'; 
+
+                const myHeading = document.querySelector('h1');
+                    myHeading.textContent = 'Lab 5 for Samantha Barlage';
+
+                document.body.style.background = '#3bebbf';
+
+                const checkboxlabel = document.querySelector('.checkbox-list-label');
+                    console.log(checkboxlabel);
+
                 const elements = document.querySelectorAll('.flex-inner li label')
                 const fruitArray = ['apple', 'kiwi', 'pomelo']
-                elements.forEach((el) => {
+                elements.forEach((el, i) => {
                     const text = el.innerText;
                     console.log(text);
+                    el.innerText = fruitArray[i]
                 })
             }
+
+            const myFunc = () => {}
         </script>
     </body>
 </html>
