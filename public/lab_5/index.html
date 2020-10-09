@@ -35,7 +35,9 @@
                             <textarea rows="5" cols='33' id="message" name="message" placeholder="Enter your message here"></textarea>
                         </li>
                         <li>
-                        <p class=".checkbox-list-label">Age</p>
+                        <p class="checkbox-list-label">
+                           Age
+                        </p>
                         <ul class="flex-inner">
                             <li>
                                 <input type="checkbox" id="eighteen-to-thirtyfive" name="age">
@@ -71,9 +73,6 @@
 
                 document.body.style.background = '#3bebbf';
 
-                const checkboxlabel = document.querySelector('.checkbox-list-label');
-                    console.log(checkboxlabel);
-
                 const elements = document.querySelectorAll('.flex-inner li label')
                 const fruitArray = ['apple', 'kiwi', 'pomelo']
                 elements.forEach((el, i) => {
@@ -81,6 +80,18 @@
                     console.log(text);
                     el.innerText = fruitArray[i]
                 })
+
+                const item = document.querySelectorAll('.flex-outer')
+                item.forEach((item) => {
+                    console.log(item);
+                    item.style= "margin: 0 auto;"
+
+                })
+
+                let checkboxlabel = document.querySelector('.checkbox-list-label');
+                    let txt = checkboxlabel.innerText;
+                    checkboxlabel.innerText= "Fruits";
+                    console.log(txt);
             }
 
             const myFunc = () => {}
