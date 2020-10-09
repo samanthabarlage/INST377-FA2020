@@ -55,7 +55,6 @@ h3 {
 }
 
 .header {
-  background: rgba(192, 152, 245, 0.8);
   color: #fff;
   display: flex;
   flex-direction: row;
