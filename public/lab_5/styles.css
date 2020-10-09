@@ -140,3 +140,8 @@ label {
   max-width: 800px;
   padding: 0 16px;
 }
+
+.checkbox-list-label{
+  display: block;
+  margin: 5px;
+}
