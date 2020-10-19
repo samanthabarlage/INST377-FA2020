@@ -31,6 +31,7 @@ document.body.addEventListener('submit', async (e) => {
     .then((fromServer) => {
       // You're going to do your lab work in here. Replace this comment.
       console.log('fromServer', fromServer);
+      console.log(range(243));
     })
     .catch((err) => console.log(err));
 });
