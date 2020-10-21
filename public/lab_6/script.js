@@ -13,9 +13,9 @@ function range(int) {
 }
 
 function sortByKey(org, compare, key) {
-  if (org[key] < compare[key]) {
+  if (org[key] > compare[key]) {
     return -1;
-  } if (org[key] > compare[key]) {
+  } if (org[key] < compare[key]) {
     return 1;
   }
   return 0;
