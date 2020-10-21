@@ -34,7 +34,6 @@ document.body.addEventListener('submit', async (e) => {
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
       // You're going to do your lab work in here. Replace this comment.
-      console.log('fromServer', fromServer);
       if(document.querySelector('.flex-inner')){
         document.querySelector('.flex-inner').remove();
       }
@@ -55,6 +54,7 @@ document.body.addEventListener('submit', async (e) => {
         $(li).append('<label for=${el.code}> ${el.name}</label>');
         $(li).append(li);
       });
+      console.log('fromServer', fromServer);
     })
     .catch((err) => console.log(err));
 });
