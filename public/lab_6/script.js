@@ -33,7 +33,6 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
-      console.log('fromServer', fromServer);
       // You're going to do your lab work in here. Replace this comment.
       if(document.querySelector('.flex-inner')){
         document.querySelector('.flex-inner').remove();
