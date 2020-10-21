@@ -12,10 +12,10 @@ function range(int) {
   return arr;
 }
 
-function sortByKey(a, b, key) {
-  if (a[key] < b[key]) {
+function sortByKey(org, compare, key) {
+  if (org[key] < compare[key]) {
     return -1;
-  } if (a[key] > b[key]) {
+  } if (org[key] > compare[key]) {
     return 1;
   }
   return 0;
@@ -50,8 +50,8 @@ document.body.addEventListener('submit', async (e) => {
 
       reverseList.forEach((el, i) => {
         const li = document.createElement('li');
-        $(li).append('<input type="checkbox" value=$(el.code) id=$(el.code) />');
-        $(li).append('<label for=$(el.code)> $(el.name)</label>');
+        $(li).append('<input type="checkbox" value=${el.code} id=${el.code} />');
+        $(li).append('<label for=${el.code}> ${el.name}</label>');
         $(li).append(li);
       });
     })
