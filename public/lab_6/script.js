@@ -54,7 +54,6 @@ document.body.addEventListener('submit', async (e) => {
         $(li).append('<label for=${el.code}> ${el.name}</label>');
         $(li).append(li);
       });
-      console.log('fromServer', fromServer);
     })
     .catch((err) => console.log(err));
 });
