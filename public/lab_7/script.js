@@ -1,7 +1,7 @@
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
   for (x = 1; x < categories.length; x++) {
-    for (i = 1; i < categories[x].length) {
+    for (i = 1; i < categories[x].length; i++) {
       if (restaurantList == categories[x][i]) {
           return categories[x]
       }
