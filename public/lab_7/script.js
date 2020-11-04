@@ -36,7 +36,7 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
     animationEnabled: true,
     colorSet: 'customColorSet1',
     title: {
-      text: 'Places to eat out in future'
+      text: 'Places To Eat Out In Future'
     },
     axisX: {
       interval: 1,
