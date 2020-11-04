@@ -1,12 +1,24 @@
 function convertRestaurantsToCategories(restaurantList) {
+  console.log('testfunctionresturant');
   // process your restaurants here!
-  for (x = 1; x < categories.length; x++) {
-    for (i = 1; i < categories[x].length; i++) {
-      if (restaurantList == categories[x][i]) {
-          return categories[x]
-      }
-    }
+  const categoryArray = [];
+  const result = {};
+  for (let i = 0; i < restaurantList.length; i += 1) {
+    categoryArray.push(restaurantList[i].category);
   }
+  for (let i = 0; i < categoryArray.length; i += 1) {
+    if (!result[categoryArray[i]]) {
+      result[categoryArray[i]] = 0;
+    }
+    result[categoryArray[i]] += 1;
+  }
+  const reply = Object.keys(result).map((category) => ({
+    y: result[category],
+    label: category
+  }));
+
+  console.log('reply', reply);
+  return reply;
 }
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
