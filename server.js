@@ -32,7 +32,7 @@ app.route('/api')
     console.log('POST request detected');
     console.log('Form data in res.body', req.body);
     //res.json(countries);
-    console.log(data);
+    console.log(json);
     res.json(json);
   });
 
