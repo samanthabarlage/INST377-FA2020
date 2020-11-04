@@ -10,6 +10,8 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3000;
+const data = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
+const json = await data.json();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -29,7 +31,9 @@ app.route('/api')
   .post((req, res) => {
     console.log('POST request detected');
     console.log('Form data in res.body', req.body);
-    res.json(countries);
+    //res.json(countries);
+    console.log(data);
+    res.json(json);
   });
 
 app.listen(port, () => {
